@@ -1,0 +1,53 @@
+﻿@page "/pic/gpt"
+@using System.IO
+@inject IWebHostEnvironment env
+<h1>Blazor Server File Upload</h1>
+
+<h3>@Message</h3>
+
+<form>
+    <InputFile OnChange="OnInputFileChange" multiple />
+    <br /><br />
+    <button type="submit" disabled="@(!selectedFiles?.Any() ?? true)">Upload Selected File(s)</button>
+</form>
+
+<div style="margin-top: 20px;">
+    @if (images.Any())
+    {
+        <h3>Uploaded Images</h3>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            @foreach (var image in images)
+            {
+                <img src="@image" style="width: 150px; height: 150px; object-fit: cover; border: 1px solid #ccc; border-radius: 5px;" />
+            }
+        </div>
+    }
+</div>
+
+@code {
+    string Message = "No file(s) selected";
+    IReadOnlyList<IBrowserFile> selectedFiles;
+    List<string> images = new();
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        selectedFiles = e.GetMultipleFiles();
+        Message = $"{selectedFiles.Count} file(s) selected";
+
+        images.Clear(); // Clear previously uploaded images
+        foreach (var file in selectedFiles)
+        {
+            // Read the image into a memory stream
+            var buffer = new MemoryStream();
+            await file.OpenReadStream().CopyToAsync(buffer);
+
+            // Convert the image data to a base64 string to render it directly
+            var base64 = Convert.ToBase64String(buffer.ToArray());
+            var imageData = $"data:{file.ContentType};base64,{base64}";
+            images.Add(imageData);
+        }
+
+        StateHasChanged();
+    }
+}
+

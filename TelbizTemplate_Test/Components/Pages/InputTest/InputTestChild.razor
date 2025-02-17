@@ -1,0 +1,26 @@
+﻿<MudPaper Elevation="5">
+    <MudText Typo="Typo.h1">From Child</MudText>
+    <h5>Id: @Object.Id</h5>
+    <h5>Name: @Object.Name</h5>
+    <h5>Description: @Object.Description</h5>
+    <EditForm Model="@Model" OnSubmit="SubmitTheForm" FormName="TheFormName">
+        <InputText class="form-control" @bind-Value="Model.Name"></InputText>
+        <InputText class="form-control" @bind-Value="Model.Description"></InputText>
+        <button class="btn btn-primary"type="submit">Send the data</button>
+    </EditForm>
+</MudPaper>
+
+
+@code {
+    [Parameter] public TestModel Object { get; set; }
+    [Parameter] public EventCallback<TestModel> ObjectChanged { get; set; }
+    [SupplyParameterFromForm(FormName = "TheFormName")] public TestModel Model { get; set; } = new();
+    public async void SubmitTheForm()
+    {
+        Object.Id = Object.Id + 1;
+        Object.Name = Model.Name;
+        Object.Description = Model.Description;
+        await ObjectChanged.InvokeAsync(Object);
+    }
+
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TelbizTemplate_Test.props" />
+</Project>

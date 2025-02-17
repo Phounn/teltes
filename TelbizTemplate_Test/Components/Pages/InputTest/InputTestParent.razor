@@ -1,0 +1,14 @@
+﻿@page "/input"
+<MudPaper Elevation="0">
+    <h3>InputTest</h3>
+    <h1>parent say @txt</h1>
+    <InputTestChild @bind-Object="testModel"></InputTestChild>
+    @testModel.Id
+    @testModel.Name
+    @testModel.Description
+</MudPaper>
+@code {
+    public string txt = "Hello From Parent";
+    public TestModel testModel = new TestModel() { Id = 1, Name = "testName", Description = "testDescription" };
+
+}

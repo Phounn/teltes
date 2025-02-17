@@ -1,0 +1,41 @@
+﻿@page "/pic"
+<InputFile OnChange="ShowPreview" multiple></InputFile>
+@message
+@foreach (var image in imageContainer)
+{
+    <img src="@image" />
+}
+@if (imageContainer != null)
+{
+    <img src="@imageOneContainer" />
+    @imageOneContainer
+}
+<MudImage Src="https://quickchart.io/qr?text=asdsdasd"></MudImage>
+@code {
+    public string message = "No file(s) selected";
+    public List<IBrowserFile> file;
+    List<string> imageContainer = new();
+    public string? imageOneContainer { get; set; }
+
+    public async Task ShowPreview(InputFileChangeEventArgs e)
+    {
+
+        file = e.GetMultipleFiles().ToList();
+        message = $"{file.Count} file(s) selected";
+        if (imageContainer != null)
+        {
+            imageOneContainer = "";
+        }
+
+        foreach (var es in file)
+        {
+            MemoryStream buffer = new();
+            await es.OpenReadStream().CopyToAsync(buffer);
+
+            var base64 = Convert.ToBase64String(buffer.ToArray());
+            var imageData = $"data:{es.ContentType};base64,{base64}";
+            imageOneContainer = imageData;
+        }
+        StateHasChanged();
+    }
+}

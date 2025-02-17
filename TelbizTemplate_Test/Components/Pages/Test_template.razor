@@ -1,0 +1,20 @@
+﻿@page "/test"
+
+<MudTextField T="string" @oninput="HandleInput" Placeholder="Type something..."></MudTextField>
+<p>@txt</p>
+
+@if(string.IsNullOrEmpty(s)){
+    <h1>true</h1>
+}else{
+    <h1>false</h1>
+}
+
+@code {
+    public string? txt { get; set; }
+    public string s = "";
+    private void HandleInput(ChangeEventArgs e)
+    {
+        txt = e.Value?.ToString(); // Updates `txt` on every keystroke
+    }
+}
+

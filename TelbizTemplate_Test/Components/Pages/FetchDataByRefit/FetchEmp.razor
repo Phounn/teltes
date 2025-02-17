@@ -1,0 +1,68 @@
+﻿@page "/refit"
+@inject IFetchEmp fetchEmp
+<input @bind="id" @oninput="() => {GetEmpById(id);}" class="form-control-lg" />
+<button class="btn btn-primary" @onclick="() => {GetEmpById(id);}">Search</button>
+<br />
+<h1>@id</h1>
+<MudSimpleTable Style="overflow-x: auto;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @if (employee == null)
+        {
+            @foreach (var e in employees)
+            {
+                <tr>
+                    <td>@e.id</td>
+                    <td>@e.firstname</td>
+                    <td>@e.lastname</td>
+                    <td>@e.email</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td>@employee.id</td>
+                <td>@employee.firstname</td>
+                <td>@employee.lastname</td>
+                <td>@employee.email</td>
+            </tr>
+        }
+    </tbody>
+</MudSimpleTable>
+@code {
+    public List<Employee> employees = new();
+    public Employee? employee { get; set; }
+    public int id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await fetchEmp.GetEmployee();
+        if (employees == null)
+        {
+            employees = new List<Employee>();
+        }
+    }
+
+    public void GetEmpById(int _id)
+    {
+        // employee = await fetchEmp.GetEmployeeById(id);
+        var store = employees.Where(e => _id == e.id).FirstOrDefault();
+        employee = store;
+        id = 0;
+        StateHasChanged();
+    }
+
+    // private async Task AddEmployee(Employee employee){
+    //     await fetchEmp.CreateEmployee(employee);
+    // }
+
+}

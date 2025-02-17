@@ -1,0 +1,64 @@
+﻿@page "/"
+@inject IHttpClientFactory ClientFactory
+
+<h3>FetchData</h3>
+@if(string.IsNullOrWhiteSpace(errorString) == false){
+    <MudText>@errorString</MudText>
+}else if(user is null){
+    <MudText>Loading...</MudText>
+}else{
+    <MudSimpleTable>
+        <thead>
+            <tr>
+                <th>FullName</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Company's name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var e in user){
+                <tr>
+                    <td>@e.FirstName @e.LastName</td>
+                    <td>@e.Email</td>
+                    <td>@e.Phone</td>
+                    <td>@e.Company.CatchPhrase</td>
+                </tr>
+
+            }
+        </tbody>
+    </MudSimpleTable>
+}
+@code {
+    public List<UserModel> user;
+    string? errorString;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // var request = new HttpRequestMessage(HttpMethod.Get, "https:jsonplaceholder.org/users");
+        // var client = ClientFactory.CreateClient("meta");
+
+
+        // HttpResponseMessage response = await client.SendAsync(request);
+
+        // if(response.IsSuccessStatusCode){
+        //     user = await response.Content.ReadFromJsonAsync<List<UserModel>>();
+        //     errorString = null;
+
+        // }else{
+        //     errorString = $"There was an error getting our forecast: {response.ReasonPhrase}";
+        // }
+        var _client = ClientFactory.CreateClient("meta");
+       
+        try
+        {
+            user = await _client.GetFromJsonAsync<List<UserModel>>("/users");
+            errorString = null;
+
+        }
+        catch (Exception e)
+        {
+            errorString = $"There was an error getting data: {e.Message}";
+        }
+    }
+}

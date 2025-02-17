@@ -1,0 +1,71 @@
+﻿@page "/gpt"
+@inject IHttpClientFactory ClientFactory
+
+<h3>Fetch Data</h3>
+@if (!string.IsNullOrWhiteSpace(errorString))
+{
+    <MudText>@errorString</MudText>
+}
+else if (users == null)
+{
+    <MudText>Loading...</MudText>
+}
+else
+{
+    <MudSimpleTable>
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Company Name</th>
+                <th>Catchphrase</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.Phone</td>
+                    <td>@user.Company?.Name</td>
+                    <td>@user.Company?.CatchPhrase</td>
+                </tr>
+            }
+        </tbody>
+    </MudSimpleTable>
+}
+@code {
+    public List<UserModel> users;
+    private string? errorString;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, "https:jsonplaceholder.typicode.com/users");
+            var client = ClientFactory.CreateClient();
+
+            using HttpResponseMessage response = await client.SendAsync(request);
+
+            if (response.IsSuccessStatusCode)
+            {
+                users = await response.Content.ReadFromJsonAsync<List<UserModel>>();
+                errorString = null;
+            }
+            else
+            {
+                errorString = $"There was an error getting data: {response.ReasonPhrase}";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorString = $"An unexpected error occurred: {ex.Message}";
+        }
+    }
+
+
+
+
+}

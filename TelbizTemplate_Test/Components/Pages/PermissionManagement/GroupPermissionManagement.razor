@@ -1,0 +1,204 @@
+﻿@inject IDialogService DialogService
+<MudPaper Elevation="0" Style="max-width:100vw;">
+    <MudSimpleTable Style="overflow-x: scroll; width:100%;" Dense="true">
+        <thead>
+            <tr>
+                <th></th>
+                @foreach (var h in _permission)
+                {
+                    <th style="writing-mode:sideways-lr; width:fit-content; padding:0;">@h</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @if (GroupPermissionList is not null)
+            {
+                @foreach (var e in GroupPermissionList)
+                {
+                    <tr>
+                        <td>@e.Name</td>
+                        @foreach (var c in _permission)
+                        {
+                            <td>
+                                <MudPaper Class="d-flex align-items-center justify-content-center" Elevation="0">
+                                    @if (e.Permissions.Contains(c))
+                                    {
+                                        <MudIconButton Icon="@Icons.Material.Filled.CheckBox" @onclick="() => {HandleRemovePermission(c, e.Permissions);}" />
+                                    }
+                                    else
+                                    {
+
+                                        <MudIconButton Icon="@Icons.Material.Filled.CheckBoxOutlineBlank" @onclick="() => {HandleChoosePermission(c, e.Permissions);}" />
+                                    }
+                                </MudPaper>
+                            </td>
+                        }
+                        <td><MudButton @onclick=" async () => { await HandleAddPhoneDialog(e.Members);}">Add Number</MudButton></td>
+                        <td><MudButton @onclick=" () => { HandleRemoveGroup(e);}">Remove Group</MudButton></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </MudSimpleTable>
+</MudPaper>
+
+<MudPaper Elevation="2" Class="mt-3">
+    <EditForm Model="@GroupModel" OnValidSubmit="HandleAddGroup">
+        <DataAnnotationsValidator />
+        <MudPaper Elevation="0" Class="d-flex gap-3">
+            <MudTextField T="string" @bind-Value="@GroupModel.Name"></MudTextField>
+            <MudTextField T="string" @bind-Value="@GroupModel.Description"></MudTextField>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" ButtonType="ButtonType.Submit">Add</MudButton>
+        </MudPaper>
+    </EditForm>
+</MudPaper>
+@* 
+<MudPaper>
+    <MudSimpleTable Style="overflow-x: auto;">
+        <thead>
+            <tr>
+                <th></th>
+                @foreach (var h in _permission)
+                {
+                    <th style="writing-mode:sideways-lr">@h</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @if (GroupPermissionList is not null)
+            {
+                @foreach (var e in GroupPermissionList)
+                {
+                    <tr>
+                        <td>@e.Name</td>
+                        @foreach (var c in _permission)
+                        {
+                            <td>
+                                @e.Permissions.Contains(c)
+                            </td>
+                        }
+                    </tr>
+                }
+            }
+        </tbody>
+    </MudSimpleTable>
+</MudPaper> *@
+
+@*------------------------------------------------------------------------------------------------------------------*@
+
+
+@code {
+    [SupplyParameterFromForm]
+    private GroupPermission? GroupModel { get; set; } = new();
+    private readonly List<string> _permission = new()
+    {
+       "pending",
+       "revenue",
+       "canceled",
+       "reward",
+       "reward-report",
+       "discount",
+       "guesslottodetail",
+       "guesslottobanners",
+       "guesstransactions",
+       "guesslotto-reward",
+       "guesslotto-reward-report",
+       "mb-quota",
+       "mb-revenue",
+       "mb-canceled",
+       "unpaidincentive",
+       "incentiveaccount",
+       "group-query",
+       "telbiz-kpc",
+    };
+
+    private List<GroupPermission>? GroupPermissionList { get; set; }
+    private List<UserPermission> users = new(){
+        new UserPermission
+        {
+            Phone = "123-456-7890",
+            Name = "Alice Johnson",
+            Description = "Administrator with full access",
+            Permissions = new List<string> {"canceled", "reward" }
+        },
+        new UserPermission
+        {
+            Phone = "987-654-3210",
+            Name = "Bob Smith",
+            Description = "Regular user with limited permissions",
+            Permissions = new List<string> { "pending", "revenue" }
+        }
+    };
+    private string? groupText { get; set; } = string.Empty;
+    private string? groupDes { get; set; } = string.Empty;
+    protected override void OnInitialized()
+    {
+        GroupPermissionList = new(){
+            new GroupPermission
+            {
+                Name = "Admin Group",
+                Description = "Has full access to the system",
+                Members = new List<string> { "2056556644", "2046578922" },
+                Permissions = new List<string> { "pending", "revenue", "canceled", "reward" }
+            },
+            new GroupPermission
+            {
+                Name = "IT Techonology",
+                Description = "Has limited access to view and edit",
+                Members = new List<string> { "2056280476", "2056368826" },
+                Permissions = new List<string> {"pending", "revenue",  }
+            }
+        };
+    }
+    public void HandleAddGroup()
+    {
+        GroupPermissionList.Add(new GroupPermission()
+            {
+                Name = GroupModel.Name,
+                Description = GroupModel.Description,
+                Members = new(),
+                Permissions = new()
+            });
+        GroupModel = new();
+    }
+    public async Task HandleRemoveGroup(GroupPermission e)
+    {
+        bool? result = await DialogService.ShowMessageBox(
+    "Warning",
+    "Deleting can not be undone!",
+    yesText: "Delete!", cancelText: "Cancel");
+        if (result is not null)
+        {
+            GroupPermissionList.Remove(e);
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+    private void HandleChoosePermission(string permission, List<string> Permissions)
+    {
+        if (!Permissions.Contains(permission))
+        {
+            Permissions.Add(permission);
+        }
+
+
+    }
+    private void HandleRemovePermission(string permission, List<string> Permissions)
+    {
+        if (Permissions.Contains(permission))
+        {
+            Permissions.Remove(permission);
+        }
+    }
+    private async Task HandleAddPhoneDialog(List<string> Members)
+    {
+        var options = new DialogOptions { FullWidth = true, MaxWidth = MaxWidth.Medium };
+        var parameters = new DialogParameters<AddPhoneNumberDialog>
+        {
+            { x => x.Members, Members }
+        };
+
+        var dialog = await DialogService.ShowAsync<AddPhoneNumberDialog>("", parameters, options);
+        var result = await dialog.Result;
+        GroupModel!.Members = result.Data as List<string>;
+    }
+}

@@ -1,0 +1,54 @@
+﻿@page "/logic"
+@using System.ComponentModel.DataAnnotations
+
+<EditForm EditContext="@editContext">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <MudGrid>
+        <MudItem xs="12" sm="7">
+            <MudCard>
+                <!-- Input fields -->
+                <MudTextField Label="First Name" @bind-Value="formModel.FirstName" />
+                <MudTextField Label="Last Name" @bind-Value="formModel.LastName" />
+
+
+
+                <!-- Button with type=button -->
+                <button type="button" @onclick="SubmitForm">Submit</button>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</EditForm>
+
+@code {
+    private FormModel formModel = new FormModel();
+    private EditContext editContext;
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(formModel);
+    }
+
+    // Manual trigger for form submission
+    private  void SubmitForm()
+    {   
+
+        var isValid = editContext.Validate(); // Programmatically validate the form
+                                              //await HandleValidSubmit();
+
+    }
+
+
+
+    public class FormModel
+    {
+        [Required(ErrorMessage = "First Name is required.")]
+        [StringLength(20, MinimumLength = 2, ErrorMessage = "First Name must be between 2 and 20 characters.")]
+        public string FirstName { get; set; } = default!;
+
+        [Required(ErrorMessage = "Last Name is required.")]
+        public string LastName { get; set; } = default!;
+    }
+}
+

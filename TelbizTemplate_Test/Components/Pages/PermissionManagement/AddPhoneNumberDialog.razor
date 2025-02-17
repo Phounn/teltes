@@ -1,0 +1,72 @@
+﻿
+<MudDialog>
+    <TitleContent>
+        Add Phone Number
+    </TitleContent>
+    <DialogContent>
+        <MudPaper Elevation="0" Class="d-flex gap-3">
+            @phoneNumber
+            <MudTextField Immediate @bind-Value="@phoneNumber"></MudTextField>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" @onclick="() => {HandleAddPhoneNumber(phoneNumber);}">Add</MudButton>
+        </MudPaper>
+        <MudPaper Elevation="0">
+            <MudSimpleTable>
+                <thead>
+                    <tr>
+                        <th>Phone Number</th>
+                        <th></th>
+                    </tr>
+                <tbody>
+                        @if (Members is not null)
+                        {
+                            @foreach (var e in Members)
+                            {
+
+                            <tr>
+                                <td>@e</td>
+                                <td><MudButton Variant="Variant.Filled" Color="Color.Error" @onclick="()=>{HandleRemovePhoneNumber(e);}">Remove</MudButton></td>
+                            </tr>
+                            }
+                        }
+                </tbody>
+                </thead>    
+            </MudSimpleTable>
+        </MudPaper>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Primary" OnClick="Submit">Ok</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; }
+
+    [Parameter] public List<string>? Members { get; set; }
+    [Parameter] public EventCallback<List<string>> MembersChange { get; set; }
+    private string phoneNumber { get; set; } = string.Empty;
+
+    private async Task Submit()
+    {
+        MudDialog.Close(Members);
+    }
+    private void Cancel() => MudDialog.Cancel();
+    private void HandleAddPhoneNumber(string phoneNumber)
+    {
+        if (!string.IsNullOrEmpty(phoneNumber))
+        {
+            Members.Add(phoneNumber);
+        }
+    }
+    private void HandleRemovePhoneNumber(string phoneNumber)
+    {
+        if (!string.IsNullOrEmpty(phoneNumber))
+        {
+            Members.Remove(phoneNumber);
+        }
+    }
+}
+
+
+
+
