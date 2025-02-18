@@ -1,0 +1,35 @@
+﻿@inject HttpClient http
+<EditForm Model="@_GroupModel" OnValidSubmit="OnSubmit">
+    <MudDialog>
+        <TitleContent>
+            ເພີ່ມກຸ່ມ
+        </TitleContent>
+        <DialogContent>
+            <MudPaper Elevation="0">
+                <DataAnnotationsValidator></DataAnnotationsValidator>
+                <MudTextField Label="Name" @bind-Value="_GroupModel.Name" Immediate></MudTextField>
+                <MudTextField Label="Description" @bind-Value="_GroupModel.Description" Immediate></MudTextField>
+
+            </MudPaper>
+        </DialogContent>
+        <DialogActions>
+            <MudButton OnClick="Cancel">Cancel</MudButton>
+            <MudButton Color="Color.Primary" Variant="Variant.Filled" ButtonType="ButtonType.Submit">Add</MudButton>
+        </DialogActions>
+    </MudDialog>
+</EditForm>
+
+@code {
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; }
+
+    [SupplyParameterFromForm] public GroupPermission _GroupModel { get; set; } = new();
+
+    private void Cancel() => MudDialog.Cancel();
+    private async Task OnSubmit()
+    {
+        var response = await http!.PostAsJsonAsync<GroupPermission>("https://localhost:7006/groups/create", _GroupModel);
+        MudDialog!.Close(DialogResult.Ok(true));
+    }
+}
+

@@ -1,0 +1,23 @@
+﻿@page "/group/{id}"
+@inject HttpClient http
+<MudContainer MaxWidth="MaxWidth.Large">
+    <MudGrid>
+        <MudItem xs="12" sm="12" md="12" lg="6" xl="6" xxl="6">
+            
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12" lg="6" xl="6" xxl="6">
+
+        </MudItem>
+    </MudGrid>
+
+</MudContainer>
+
+@code {
+    [Parameter] public string id { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await http!.GetFromJsonAsync<UserPermission>($"https://localhost:7006/group/{id}");
+    }
+
+
+}

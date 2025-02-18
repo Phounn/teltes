@@ -51,3 +51,4 @@ C:\Users\NITRO\source\repos\TelbizTemplate_Test\Api\obj\Debug\net9.0\refint\Api.
 C:\Users\NITRO\source\repos\TelbizTemplate_Test\Api\obj\Debug\net9.0\Api.pdb
 C:\Users\NITRO\source\repos\TelbizTemplate_Test\Api\obj\Debug\net9.0\Api.genruntimeconfig.cache
 C:\Users\NITRO\source\repos\TelbizTemplate_Test\Api\obj\Debug\net9.0\ref\Api.dll
+C:\Users\NITRO\source\repos\TelbizTemplate_Test\Api\obj\Debug\net9.0\Api.sourcelink.json

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TestTelbiz_donet9.props" />
+</Project>

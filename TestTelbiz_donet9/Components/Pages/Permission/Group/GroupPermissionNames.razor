@@ -1,0 +1,93 @@
+﻿@using TestTelbiz_donet9.Components.Pages.Permission.Common
+@inject HttpClient http
+@inject NavigationManager Nav
+@inject IDialogService DialogService
+
+<MudContainer MaxWidth="MaxWidth.ExtraLarge">
+    <MudGrid Spacing="4">
+        <MudItem xs="12" sm="12" md="12" lg="6" xl="6" xxl="6">
+            <MudPaper Elevation="0">
+                @if (groupPermissionModel is not null)
+                {
+                    <MudSimpleTable Style="overflow-x: auto;">
+                        <thead>
+                            <tr>
+                                <th>Group Name</th>
+                                <th>Description</th>
+                                <th></th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var e in groupPermissionModel)
+                            {
+                                <tr>
+                                    <td>@e.Name</td>
+                                    <td>@e.Description</td>
+                                    <td><MudButton Color="Color.Primary" Variant="Variant.Filled" @onclick="() => {HandleNavToGroupDetail(e.Id);}">Go</MudButton></td>
+                                    <td><MudButton Color="Color.Error" Variant="Variant.Filled" @onclick="() => {HandleDeleteGroupPermissionAsync(e.Id);}">Delete</MudButton></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </MudSimpleTable>
+                }
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" sm="12" md="12" lg="4" xl="4" xxl="4">
+            <MudPaper>
+                <EditForm Model="@_GroupModel" OnValidSubmit="OnSubmit">
+                    <MudPaper Class="d-flex flex-column gap-3 pa-5" Elevation="0">
+                        <DataAnnotationsValidator></DataAnnotationsValidator>
+                        <MudTextField Label="Name" @bind-Value="_GroupModel.Name" Immediate></MudTextField>
+                        <MudTextField Label="Description" @bind-Value="_GroupModel.Description" Immediate></MudTextField>
+                        <MudButton Color="Color.Primary" Variant="Variant.Filled" ButtonType="ButtonType.Submit">Add</MudButton>
+                    </MudPaper>
+                </EditForm>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+@code {
+    private List<GroupPermission> groupPermissionModel { get; set; } = new();
+    [SupplyParameterFromForm] public GroupPermission _GroupModel { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await http!.GetFromJsonAsync<List<PermissionManagement>>("https://localhost:7006/allpermission");
+        groupPermissionModel = response!.SelectMany(x => x.Groups).ToList();
+        await InvokeAsync(StateHasChanged);
+    }
+    private void HandleNavToGroupDetail(string id)
+    {
+        Nav.NavigateTo($"/group/{id}");
+    }
+    private async Task HandleAddGroupPermissionDialog()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true, FullWidth = true, MaxWidth = MaxWidth.Small };
+
+
+        var dialog = await DialogService.ShowAsync<AddGroupPermissionDialog>("", options);
+        var result = await dialog.Result;
+        if (result.Canceled) return;
+        await LoadingInfo();
+    }
+    private async Task LoadingInfo()
+    {
+        var response = await http!.GetFromJsonAsync<List<PermissionManagement>>("https://localhost:7006/allpermission");
+        groupPermissionModel = response!.SelectMany(x => x.Groups).ToList();
+        await InvokeAsync(StateHasChanged);
+    }
+    private async Task HandleDeleteGroupPermissionAsync(string id)
+    {
+        var response = await http!.DeleteAsync($"https://localhost:7006/group/{id}/delete");
+        await LoadingInfo();
+    }
+    private async Task OnSubmit()
+    {
+        var response = await http!.PostAsJsonAsync<GroupPermission>("https://localhost:7006/groups/create", _GroupModel);
+        _GroupModel = new();
+        await LoadingInfo();
+    }
+}

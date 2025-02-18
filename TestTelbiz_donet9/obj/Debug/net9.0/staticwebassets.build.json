@@ -1,0 +1,1490 @@
+{
+  "Version": 1,
+  "Hash": "Eie3fybqeo2o57QgNJImly5OG67OFwYBAhZpErJWZsk=",
+  "Source": "TestTelbiz_donet9",
+  "BasePath": "_content/TestTelbiz_donet9",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TestTelbiz_donet9\\wwwroot",
+      "Source": "TestTelbiz_donet9",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\wwwroot\\",
+      "BasePath": "_content/TestTelbiz_donet9",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "32p77bvc6j",
+      "Integrity": "ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r91md4kz0z",
+      "Integrity": "EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-r91md4kz0z.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qy82zvxqn6",
+      "Integrity": "HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\4y1ovroa6e-70pwxmyv95.gz",
+      "SourceId": "TestTelbiz_donet9",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/TestTelbiz_donet9",
+      "RelativePath": "TestTelbiz_donet9#[.{fingerprint=70pwxmyv95}]!.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\TestTelbiz_donet9.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "y79m07gyyq",
+      "Integrity": "0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\TestTelbiz_donet9.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\fg5qkbyufl-70pwxmyv95.gz",
+      "SourceId": "TestTelbiz_donet9",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/TestTelbiz_donet9",
+      "RelativePath": "TestTelbiz_donet9#[.{fingerprint=70pwxmyv95}]?.styles.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\bundle\\TestTelbiz_donet9.styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "y79m07gyyq",
+      "Integrity": "0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\bundle\\TestTelbiz_donet9.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\rn2rddygky-4kywy7iv6g.gz",
+      "SourceId": "TestTelbiz_donet9",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/TestTelbiz_donet9",
+      "RelativePath": "app#[.{fingerprint=4kywy7iv6g}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\wwwroot\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "2en0hznbof",
+      "Integrity": "asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-32p77bvc6j.gz",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zvqyo1nr33",
+      "Integrity": "n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\bundle\\TestTelbiz_donet9.styles.css",
+      "SourceId": "TestTelbiz_donet9",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/TestTelbiz_donet9",
+      "RelativePath": "TestTelbiz_donet9#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "70pwxmyv95",
+      "Integrity": "l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\bundle\\TestTelbiz_donet9.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\TestTelbiz_donet9.bundle.scp.css",
+      "SourceId": "TestTelbiz_donet9",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/TestTelbiz_donet9",
+      "RelativePath": "TestTelbiz_donet9#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "70pwxmyv95",
+      "Integrity": "l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\TestTelbiz_donet9.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\wwwroot\\app.css",
+      "SourceId": "TestTelbiz_donet9",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\wwwroot\\",
+      "BasePath": "_content/TestTelbiz_donet9",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4kywy7iv6g",
+      "Integrity": "9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.32p77bvc6j.css",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "32p77bvc6j"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-32p77bvc6j.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000015407134"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64904"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-32p77bvc6j.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-r91md4kz0z.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000085455478"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11701"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-r91md4kz0z.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.r91md4kz0z.js",
+      "AssetFile": "C:\\Users\\NITRO\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r91md4kz0z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.js"
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\rn2rddygky-4kywy7iv6g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000742390497"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.4kywy7iv6g.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\rn2rddygky-4kywy7iv6g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kywy7iv6g"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\rn2rddygky-4kywy7iv6g.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000742390497"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9DR4jqepGIo9Cj7VCYKuZtZqXALX1jWq8UpnuF3uz30="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\rn2rddygky-4kywy7iv6g.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1346"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-asODEDoSczli+v7BcPWOb+ZvlZiz7/jpDtOl7lYQLVU="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.70pwxmyv95.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\4y1ovroa6e-70pwxmyv95.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002958579882"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70pwxmyv95"
+        },
+        {
+          "Name": "label",
+          "Value": "TestTelbiz_donet9.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.70pwxmyv95.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\TestTelbiz_donet9.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70pwxmyv95"
+        },
+        {
+          "Name": "label",
+          "Value": "TestTelbiz_donet9.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.70pwxmyv95.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\4y1ovroa6e-70pwxmyv95.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70pwxmyv95"
+        },
+        {
+          "Name": "label",
+          "Value": "TestTelbiz_donet9.bundle.scp.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.70pwxmyv95.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\fg5qkbyufl-70pwxmyv95.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002958579882"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70pwxmyv95"
+        },
+        {
+          "Name": "label",
+          "Value": "TestTelbiz_donet9.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.70pwxmyv95.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\bundle\\TestTelbiz_donet9.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70pwxmyv95"
+        },
+        {
+          "Name": "label",
+          "Value": "TestTelbiz_donet9.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.70pwxmyv95.styles.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\fg5qkbyufl-70pwxmyv95.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70pwxmyv95"
+        },
+        {
+          "Name": "label",
+          "Value": "TestTelbiz_donet9.styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\4y1ovroa6e-70pwxmyv95.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002958579882"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.bundle.scp.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\TestTelbiz_donet9.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\4y1ovroa6e-70pwxmyv95.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\fg5qkbyufl-70pwxmyv95.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002958579882"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.styles.css",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\scopedcss\\bundle\\TestTelbiz_donet9.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l//12RLPKj85rxp/iE/+Ifm67JhyEcwqlcskFI984C8="
+        }
+      ]
+    },
+    {
+      "Route": "TestTelbiz_donet9.styles.css.gz",
+      "AssetFile": "C:\\Users\\NITRO\\source\\repos\\TelbizTemplate_Test\\TestTelbiz_donet9\\obj\\Debug\\net9.0\\compressed\\fg5qkbyufl-70pwxmyv95.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 02:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0iumqWhPTyWmoiKgX/qd0VjmEKkWWBqhy7wpAp0PAMw="
+        }
+      ]
+    }
+  ]
+}

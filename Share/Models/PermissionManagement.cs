@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Share.Models
 {
@@ -18,19 +19,19 @@ namespace Share.Models
     public class UserPermission
     {
         [Key]
-        public string? Phone { get; set; }
-        public string? Name { get; set; }
+        public string Phone { get; set; } = default!;
+        public string Name { get; set; } = default!;
         public string? Description { get; set; }
-        public List<string> Permissions { get; set; } = new();
+        public List<string>? Permissions { get; set; } = new();
     }
-    public class GroupPermission    
+    public class GroupPermission
     {
         public string? Id { get; set; }
         [Required]
-        public string? Name { get; set; }
+        public string Name { get; set; } = default!;
         [Required]
-        public string? Description { get; set; }
-        public List<string> Members { get; set; } = new();
-        public List<string> Permissions { get; set; } = new();
+        public string Description { get; set; } = default!;
+        public List<string>? Members { get; set; } = new();
+        public List<string>? Permissions { get; set; } = new();
     }
 }

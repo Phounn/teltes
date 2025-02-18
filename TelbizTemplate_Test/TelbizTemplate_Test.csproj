@@ -15,6 +15,11 @@
 
   <ItemGroup>
     <Folder Include="Components\Pages\API\Models\" />
+    <Folder Include="Components\Pages\PermissionManagement\Common\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Share\Share.csproj" />
   </ItemGroup>
 
 </Project>

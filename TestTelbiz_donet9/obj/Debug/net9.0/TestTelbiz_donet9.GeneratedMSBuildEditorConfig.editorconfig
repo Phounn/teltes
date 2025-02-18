@@ -1,0 +1,64 @@
+is_global = true
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TestTelbiz_donet9
+build_property.RootNamespace = TestTelbiz_donet9
+build_property.ProjectDir = C:\Users\NITRO\source\repos\TelbizTemplate_Test\TestTelbiz_donet9\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\NITRO\source\repos\TelbizTemplate_Test\TestTelbiz_donet9
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Pages/Permission/Common/AddGroupPermissionDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZXJtaXNzaW9uXENvbW1vblxBZGRHcm91cFBlcm1pc3Npb25EaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Pages/Permission/Group/GroupPermissionDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZXJtaXNzaW9uXEdyb3VwXEdyb3VwUGVybWlzc2lvbkRldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Pages/Permission/Group/GroupPermissionNames.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZXJtaXNzaW9uXEdyb3VwXEdyb3VwUGVybWlzc2lvbk5hbWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Pages/Permission/IndexPermissionManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZXJtaXNzaW9uXEluZGV4UGVybWlzc2lvbk1hbmFnZW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NITRO/source/repos/TelbizTemplate_Test/TestTelbiz_donet9/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-jech0j3o13

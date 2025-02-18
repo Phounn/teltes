@@ -4,6 +4,7 @@ using TelbizTemplate_Test.Components.Pages.FetchDataByRefit;
 using System.Net.Http.Json;
 using Refit;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
